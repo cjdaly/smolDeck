@@ -4,7 +4,7 @@ smolDeck is a tiny [cyberDeck](https://www.reddit.com/r/cyberDeck/) based on the
 
 The Keyboard FeatherWing is a computer peripheral.  It needs a [feather](https://www.adafruit.com/feather) device with a CPU, RAM, etc. to make it work. The feather could be running [CircuitPython](https://circuitpython.org/) or Arduino or even Linux.
 
-The Keyboard FeatherWing includes a [Stemma-QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) jack which can be used for enhanced cyber-ing if you have a standard Stemma-QT brain stem implant. Or it can be used with external [Stemma-QT devices](https://www.adafruit.com/category/1005).
+The Keyboard FeatherWing includes a [Stemma-QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) jack which can be used for enhanced cyber-ing, if you have a standard Stemma-QT brain stem implant. Or it can be used with external [Stemma-QT devices](https://www.adafruit.com/category/1005).
 
 ## CircuitPython (or Arduino)
 
@@ -14,5 +14,5 @@ The Keyboard FeatherWing includes a [Stemma-QT](https://learn.adafruit.com/intro
 
 ## Linux
 
-The [Giant Board](https://groboards.com/giant-board) available from [Crowd Supply](https://www.crowdsupply.com/groboards/giant-board) is a feather form-factor board that runs Debian. There [documentation](https://groboards.com/docs) and a 'blackberry' image in the [downloads](http://downloads.groboards.com) which connected the screen (got a login prompt), but not the keyboard (couldn't type and login) when I tried it. 
+The [Giant Board](https://groboards.com/giant-board) available from [Crowd Supply](https://www.crowdsupply.com/groboards/giant-board) is a feather form-factor board that runs Debian. There is [documentation](https://groboards.com/docs) and a 'blackberry' image in the [downloads](http://downloads.groboards.com) which connected the screen (got a login prompt), but not the keyboard (couldn't type and login) when I tried it. 
 
