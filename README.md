@@ -4,7 +4,7 @@ smolDeck is a tiny [cyberDeck](https://www.reddit.com/r/cyberDeck/) based on the
 
 ![smolDeck front](images/smolDeck-front.jpg)
 
-The Keyboard FeatherWing is a computer peripheral.  It needs a [feather](https://www.adafruit.com/feather) device with a CPU, RAM, etc. to make it work. The feather could be running [CircuitPython](https://circuitpython.org/) or Arduino or even Linux.
+The Keyboard FeatherWing is a computer peripheral.  It needs a [feather](https://www.adafruit.com/feather) device with a CPU, RAM, etc. plugged into the back to make it work. The feather could be running [CircuitPython](https://circuitpython.org/) or Arduino or even Linux.
 
 ![smolDeck back](images/smolDeck-back.jpg)
 
