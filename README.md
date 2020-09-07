@@ -8,7 +8,7 @@ The Keyboard FeatherWing is a computer peripheral.  It needs a [feather](https:/
 
 ![smolDeck back](images/smolDeck-back.jpg)
 
-The Keyboard FeatherWing includes a [Stemma-QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) jack which can be used for enhanced cyber-ing, if you have a standard Stemma-QT brain stem implant. Or it can be used with external [Stemma-QT devices](https://www.adafruit.com/category/1005).
+The Keyboard FeatherWing includes a [Stemma-QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) jack which can be used for enhanced cyber-ing, if you have a standard Stemma-QT brain stem implant. Or it can be used with external [Stemma-QT](https://www.adafruit.com/category/1005) or [Qwiic](https://www.sparkfun.com/qwiic) I2C devices.
 
 ## CircuitPython (or Arduino)
 
