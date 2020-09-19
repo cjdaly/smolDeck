@@ -1,0 +1,64 @@
+# The MIT License (MIT)
+#
+# Copyright (c) 2020 Chris J Daly (github user cjdaly)
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+import board, digitalio, displayio
+import storage, os
+import neopixel
+import adafruit_sdcard
+import adafruit_ili9341
+from bbq10keyboard import BBQ10Keyboard
+
+spi = board.SPI()
+i2c = board.I2C()
+
+# setup display
+displayio.release_displays()
+tft_cs = board.D9
+tft_dc = board.D10
+display_bus = displayio.FourWire(spi, command=tft_dc, chip_select=tft_cs)
+display = adafruit_ili9341.ILI9341(display_bus, width=320, height=240)
+
+# setup keyboard
+kbd = BBQ10Keyboard(i2c)
+
+# setup microSD
+sd_cs = board.D5
+sdcard = adafruit_sdcard.SDCard(spi, digitalio.DigitalInOut(sd_cs))
+vfs = storage.VfsFat(sdcard)
+storage.mount(vfs, '/sd')
+
+# setup NeoPixels
+pix0 = neopixel.NeoPixel(board.NEOPIXEL, 1)
+pix0[0] = 0x000080
+
+pix1 = neopixel.NeoPixel(board.D11, 1)
+
+#
+while True:
+  k=kbd.keys
+  for i in k:
+    if i[0] == 1:
+      print(i[1], end='')
+      pix1[0] = 0x000404
+    elif i[0] == 3:
+      pix1[0] = 0x000000
+
