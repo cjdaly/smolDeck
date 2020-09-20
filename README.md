@@ -18,5 +18,7 @@ The Keyboard FeatherWing includes a [Stemma-QT](https://learn.adafruit.com/intro
 
 ## Linux
 
-The [Giant Board](https://groboards.com/giant-board) available from [Crowd Supply](https://www.crowdsupply.com/groboards/giant-board) is a feather form-factor board that runs Debian. There is [documentation](https://groboards.com/docs) and a 'blackberry' image in the [downloads](http://downloads.groboards.com) which connected the screen (got a login prompt), but not the keyboard (couldn't type and login) when I tried it. 
+The [Giant Board](https://groboards.com/giant-board) available from [Crowd Supply](https://www.crowdsupply.com/groboards/giant-board) is a feather form-factor board that runs Debian. There is [documentation](https://groboards.com/docs) and a 'blackberry' image in the [downloads](http://downloads.groboards.com) which connected the screen (got a login prompt), but not the keyboard (couldn't type and login) when I tried it.
+
+Update: Someone found a [bodge](https://twitter.com/groguard/status/1304881264185339904) to fix the keyboard issue.
 
