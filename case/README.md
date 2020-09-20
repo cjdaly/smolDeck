@@ -13,9 +13,10 @@
   * https://github.com/arturo182/keyboard_featherwing_hw
 * colors - please make:
   * one in black
-  * one in either army green, dark blue or ??? (something cyberdeck-ish)
+  * one in either army green, dark blue or ??? (something cyberdeck-ish?)
 * sides
   * leave space on side for Stemma-QT port
   * leave space on top for on/off switch, USB and microSD
-* cyberdeck look - do your best interpretation; chonky
+* cyberDeck look - chonky?
+  * don't overthink it, but refer to https://old.reddit.com/r/cyberDeck/ if in need of inspiration
 
